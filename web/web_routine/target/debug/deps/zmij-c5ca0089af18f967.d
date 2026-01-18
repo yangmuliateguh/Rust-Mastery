@@ -1,0 +1,7 @@
+D:\GRINDING\RUST\web\web_routine\target\debug\deps\zmij-c5ca0089af18f967.d: C:\Users\HP\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zmij-1.0.13\src\lib.rs C:\Users\HP\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zmij-1.0.13\src\stdarch_x86.rs C:\Users\HP\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zmij-1.0.13\src\traits.rs
+
+D:\GRINDING\RUST\web\web_routine\target\debug\deps\libzmij-c5ca0089af18f967.rmeta: C:\Users\HP\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zmij-1.0.13\src\lib.rs C:\Users\HP\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zmij-1.0.13\src\stdarch_x86.rs C:\Users\HP\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zmij-1.0.13\src\traits.rs
+
+C:\Users\HP\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zmij-1.0.13\src\lib.rs:
+C:\Users\HP\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zmij-1.0.13\src\stdarch_x86.rs:
+C:\Users\HP\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\zmij-1.0.13\src\traits.rs:

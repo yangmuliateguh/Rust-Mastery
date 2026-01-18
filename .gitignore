@@ -1,0 +1,21 @@
+# Artefak build Rust
+/target/
+
+# File executable (opsional, karena sudah di-cover oleh /target/)
+*.exe
+*.pdb
+
+# File editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# File sistem
+.DS_Store
+Thumbs.db
+
+# Environment variables (jika ada)
+.env
+
+update.sh
