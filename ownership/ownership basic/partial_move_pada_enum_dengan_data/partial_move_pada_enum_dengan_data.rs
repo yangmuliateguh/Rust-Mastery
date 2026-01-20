@@ -1,17 +1,17 @@
 #[derive(Debug)]
 enum Message {
     Text(String),
-    Code(u32)
+    Code(u32),
 }
 
-fn main(){
+fn main() {
     let m = Message::Text("penting".into());
     if let Message::Text(content) = m {
-        use_text(content);
+        use_text(content); // `content` dipindahkan
     }
-    // println!("{:?}",m);
+    // println!("{:?}", m); // ❌ Error! `m` sudah dipindahkan
 }
 
 fn use_text(s: String) {
-    println!("isi : {}",s);
+    println!("Isi: {}", s);
 }
