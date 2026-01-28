@@ -1,24 +1,9 @@
-#[derive (Debug)]
-struct Inner {
-    value: String
-}
-
-#[derive (Debug)]
-struct Outer {
-    inner: Inner
-}
-
-fn update_value(o: &mut Outer) {
-    o.inner.value.push_str(" -updated");
+fn first_word(s: &str) -> &str {
+    s.split_whitespace().next().unwrap_or("")
 }
 
 fn main(){
-    let mut outer = Outer {
-        inner: Inner {
-            value: "asli".into()
-        }
-    };
-    println!("{:?}", outer);
-    update_value(&mut outer);
-    println!("{:?}", outer);
+    let text = "hello world";
+    let word = first_word(&text);
+    println!("{}", word);
 }
