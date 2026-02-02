@@ -9,7 +9,9 @@ struct Event {
 }
 
 impl Display for Event {
-    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+    fn fmt(
+        &self, f: &mut std::fmt::Formatter
+    ) -> std::fmt::Result {
         write!(f, "{}", self.msg)
     }
 }
@@ -21,11 +23,11 @@ impl Log for Event {
 }
 
 fn print_log<T: Display + Log>(item: T) {
-    println!("[System] {}", item);
+    println!("[System]: {}", item);
     item.log();
 }
 
 fn main(){
-    let e = Event {msg: "asikjuga uyy".into()};
+    let e = Event{ msg:"asikjuga cuyy".into() };
     print_log(e);
 }
