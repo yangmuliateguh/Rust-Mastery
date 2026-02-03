@@ -1,8 +1,0 @@
-[package]
-name = "optional_json_field"
-version = "0.1.0"
-edition = "2024"
-
-[dependencies]
-serde_json = { version = "1.0", default-features = false, features = ["alloc"] }
-serde = { version = "1.0", features = ["derive"] }
