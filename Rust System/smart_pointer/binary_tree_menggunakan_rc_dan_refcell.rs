@@ -1,14 +1,14 @@
 use std::rc::Rc;
 use std::cell::RefCell;
 
-struct BinaryTree {
+struct Node {
     name: String,
-    children: Vec<Rc<RefCell<BinaryTree>>>,
+    children: Vec<Rc<RefCell<Node>>>,
 }
 
-impl BinaryTree {
+impl Node {
     fn new(name: String) -> Self {
-        BinaryTree {
+        Node {
             name,
             children: Vec::new(),
         }
@@ -27,11 +27,11 @@ impl BinaryTree {
 fn main() {
     println!("=== Contoh Binary Tree Keluarga Jokowi ===\n");
     
-    let jokowi = Rc::new(RefCell::new(BinaryTree::new("jokowi".to_string())));
-    let gibran = Rc::new(RefCell::new(BinaryTree::new("gibran".to_string())));
-    let kahiyang_ayu = Rc::new(RefCell::new(BinaryTree::new("kahiyang ayu".to_string())));
-    let kaesang = Rc::new(RefCell::new(BinaryTree::new("kaesang".to_string())));
-    let jan_ethes = Rc::new(RefCell::new(BinaryTree::new("jan ethes".to_string())));
+    let jokowi = Rc::new(RefCell::new(Node::new("jokowi".to_string())));
+    let gibran = Rc::new(RefCell::new(Node::new("gibran".to_string())));
+    let kahiyang_ayu = Rc::new(RefCell::new(Node::new("kahiyang ayu".to_string())));
+    let kaesang = Rc::new(RefCell::new(Node::new("kaesang".to_string())));
+    let jan_ethes = Rc::new(RefCell::new(Node::new("jan ethes".to_string())));
     
     println!("Strong counts setelah create:");
     println!("  {}: {}", jokowi.borrow().name, Rc::strong_count(&jokowi));
