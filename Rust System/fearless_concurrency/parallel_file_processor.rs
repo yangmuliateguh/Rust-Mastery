@@ -16,11 +16,6 @@ fn main(){
         "file4.txt",
     ];
 
-    for (i, file) in files.iter().enumerate(){
-        fs::write(file, format!("ini adalah isi file {} dengan beberapa kata", i))
-            .unwrap_or_default();
-    }
-
     let mut handles = vec![];
 
     for file in files {
